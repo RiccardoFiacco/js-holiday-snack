@@ -19,3 +19,13 @@ firstForm.addEventListener("submit", (event)=>{
     const displayFirst = document.getElementById("result-first-snack");
     displayFirst.innerText = print;
 })
+
+
+//secondSnack
+
+const secondForm = document.getElementById("second-snack-form");
+secondForm.addEventListener("submit", (event)=>{
+    event.preventDefault();
+    const word = document.getElementById("input-second-snack").value.toLowerCase();
+    console.log(word)
+})
