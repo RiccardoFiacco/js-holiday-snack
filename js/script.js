@@ -27,7 +27,9 @@ const secondForm = document.getElementById("second-snack-form");
 secondForm.addEventListener("submit", (event)=>{
     event.preventDefault();
     const word = document.getElementById("input-second-snack").value.toLowerCase();
-    const start = document.getElementById("start-second-snack").value;
-    const end = document.getElementById("end-second-snack").value;
-
+    const start = parseInt(document.getElementById("start-second-snack").value);
+    const end = parseInt(document.getElementById("end-second-snack").value);
+    const result = (word.split('').slice(start, end+1)).join('');
+    const displaySecond  = document.getElementById("result-second-snack");
+    displaySecond.innerText = result;
 })
