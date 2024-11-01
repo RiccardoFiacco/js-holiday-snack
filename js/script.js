@@ -33,3 +33,16 @@ secondForm.addEventListener("submit", (event)=>{
     const displaySecond  = document.getElementById("result-second-snack");
     displaySecond.innerText = result;
 })
+
+
+//third snack
+
+const thirdForm = document.getElementById("third-snack-form");
+const arrThirdSnack = [];
+
+insertThirdSnack.addEventListener("click", (event)=>{
+    event.preventDefault();
+    const num = parseInt(document.getElementById("input-third-snack").value);
+    arrThirdSnack.push(num);
+    console.log(arrThirdSnack)
+})
