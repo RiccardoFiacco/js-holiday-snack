@@ -27,5 +27,7 @@ const secondForm = document.getElementById("second-snack-form");
 secondForm.addEventListener("submit", (event)=>{
     event.preventDefault();
     const word = document.getElementById("input-second-snack").value.toLowerCase();
-    console.log(word)
+    const start = document.getElementById("start-second-snack").value;
+    const end = document.getElementById("end-second-snack").value;
+
 })
