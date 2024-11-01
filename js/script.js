@@ -1,4 +1,13 @@
-
+//function
+function isEven(n){
+    const flag = isNum(n);
+    if(flag){
+        const bool = n%2==0;
+        return bool
+    }else{
+        return("non un numero")
+    }
+}
 
 //first snack
 
@@ -45,4 +54,9 @@ insertThirdSnack.addEventListener("click", (event)=>{
     const num = parseInt(document.getElementById("input-third-snack").value);
     arrThirdSnack.push(num);
     console.log(arrThirdSnack)
+})
+
+thirdForm.addEventListener("submit", (event)=>{
+    event.preventDefault();
+
 })
