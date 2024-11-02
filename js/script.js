@@ -150,4 +150,11 @@ insertSixthSnack.addEventListener("click", (event)=>{
     event.preventDefault();
     const nameSurname = document.getElementById("name-sixth-snack").value;
     const age = parseInt(document.getElementById("age-sixth-snack").value);
+    //potrebbero esserci vari controlli sull'input
+    let obj = {
+        nameSurname,
+        age
+    }
+    arrSixthSnack.push(obj);
+    console.log(arrSixthSnack)
 })
