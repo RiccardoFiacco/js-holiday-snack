@@ -170,3 +170,16 @@ sixthForm.addEventListener("submit", (event)=>{
     })
     arrSixthSnack = [];
 })
+
+//seventh snack
+
+const hiddenFirstSnack = document.getElementById("sherlock-first-form");
+const firstSherlockArray = [];
+
+insertSherlockFirstSnack.addEventListener("click", (event)=>{
+    event.preventDefault();
+    const num = parseInt(document.getElementById("input-sherlock-first-snack").value);
+    firstSherlockArray.push(num); 
+    document.getElementById("input-sherlock-first-snack").value = "";
+})
+
