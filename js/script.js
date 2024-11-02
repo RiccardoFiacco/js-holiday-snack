@@ -1,4 +1,12 @@
 //function
+function isNum(n){
+    if(typeof n !== 'number'){
+        return false;
+    }else{
+        return true;
+    }
+}
+
 function isEven(n){
     const flag = isNum(n);
     if(flag){
@@ -47,7 +55,7 @@ secondForm.addEventListener("submit", (event)=>{
 //third snack
 
 const thirdForm = document.getElementById("third-snack-form");
-const arrThirdSnack = [];
+let arrThirdSnack = [];
 
 insertThirdSnack.addEventListener("click", (event)=>{
     event.preventDefault();
@@ -58,5 +66,8 @@ insertThirdSnack.addEventListener("click", (event)=>{
 
 thirdForm.addEventListener("submit", (event)=>{
     event.preventDefault();
-
+    const result = arrThirdSnack.filter(isEven);
+    resultThirdSnack.innerText = result;
+    arrThirdSnack = [];
+    document.getElementById("input-third-snack").value = "";
 })
