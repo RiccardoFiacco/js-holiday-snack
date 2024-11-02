@@ -16,7 +16,25 @@ function isEven(n){
         return("non un numero")
     }
 }
+function isDivisible(arr, divisor){
+    let flag;
+    let i=0;
+   do{
+    flag = isNum(arr[i]);
+    i++;
+   }while(flag && i<arr.length)
 
+    if(flag){
+        const result = arr.filter((el)=>{
+            if(el%divisor == 0){
+                return el
+            }
+        });
+        return result 
+    }else{
+         return ("ce una stringa nell'array");
+    }  
+}
 //first snack
 
 const firstForm = document.getElementById("first-snack-form");
@@ -99,4 +117,26 @@ fourthForm.addEventListener("submit", (event)=>{
     }
     resultFourthSnack.innerText = result;
     arrFourthSnack = [];
+})
+
+//fifth snack
+
+const fifthForm = document.getElementById("fifth-snack-form");
+let arrFifthSnack = [];
+
+insertFifthSnack.addEventListener("click", (event)=>{
+    event.preventDefault();
+    const num = parseInt(document.getElementById("input-fifth-snack").value);
+    arrFifthSnack.push(num); 
+    document.getElementById("input-fifth-snack").value = "";
+})
+
+fifthForm.addEventListener("submit", (event)=>{
+    
+    event.preventDefault();
+    const divisor = parseInt(document.getElementById("divisor-fifth-snack").value);   
+    const result = isDivisible(arrFifthSnack, divisor);
+    resultFifthSnack.innerText = result;
+    arrFifthSnack = [];
+    
 })
