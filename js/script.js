@@ -183,3 +183,12 @@ insertSherlockFirstSnack.addEventListener("click", (event)=>{
     document.getElementById("input-sherlock-first-snack").value = "";
 })
 
+hiddenFirstSnack.addEventListener(("submit"), (event)=>{
+    event.preventDefault();
+    let sum = 0;
+    for(let i = 0; i< firstSherlockArray ; i++){
+        sum += firstSherlockArray;
+    }
+    let result = sum/2;
+    
+})
