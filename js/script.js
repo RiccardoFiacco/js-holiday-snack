@@ -140,3 +140,14 @@ fifthForm.addEventListener("submit", (event)=>{
     arrFifthSnack = [];
     
 })
+
+//sixth snack
+
+const sixthForm = document.getElementById("sixth-snack-form");
+let arrSixthSnack = [];
+
+insertSixthSnack.addEventListener("click", (event)=>{
+    event.preventDefault();
+    const nameSurname = document.getElementById("name-sixth-snack").value;
+    const age = parseInt(document.getElementById("age-sixth-snack").value);
+})
