@@ -158,3 +158,15 @@ insertSixthSnack.addEventListener("click", (event)=>{
     arrSixthSnack.push(obj);
     console.log(arrSixthSnack)
 })
+
+sixthForm.addEventListener("submit", (event)=>{
+    event.preventDefault();
+    arrSixthSnack.sort((a, b) => a.age - b.age);
+    let i= 0;
+    arrSixthSnack.forEach((el)=>{ 
+  
+        resultSixthSnack.innerText += `[${el.age} ${el.nameSurname}] `;
+        i++;
+    })
+    arrSixthSnack = [];
+})
