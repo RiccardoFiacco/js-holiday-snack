@@ -190,5 +190,6 @@ hiddenFirstSnack.addEventListener(("submit"), (event)=>{
         sum += firstSherlockArray;
     }
     let result = sum/2;
-    
+    resultSherlockFirstSnack.innerText = result;
+    firstSherlockArray = [];
 })
