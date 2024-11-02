@@ -193,3 +193,12 @@ hiddenFirstSnack.addEventListener(("submit"), (event)=>{
     resultSherlockFirstSnack.innerText = result;
     firstSherlockArray = [];
 })
+
+//eighth snack
+
+const secondHidden = document.getElementById("secondH-form");
+
+secondHidden.addEventListener("submit", (event)=>{
+    event.preventDefault();
+    
+})
