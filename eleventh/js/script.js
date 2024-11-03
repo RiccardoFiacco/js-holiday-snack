@@ -20,10 +20,7 @@ form.addEventListener("submit", (event)=>{
             i+=res
     }
     
-
-    console.log(finalWord)
-
-
+    result.innerText = "risultato : "+ finalWord
 
     function count(el){
         let count = 0;
