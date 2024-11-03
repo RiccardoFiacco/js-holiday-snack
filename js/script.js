@@ -219,7 +219,6 @@ thirdHidden.addEventListener("submit", (event)=>{
 
    const wordOne = document.getElementById("thirdH-text-one").value.toLowerCase();
    const wordTwo = document.getElementById("thirdH-text-two").value.toLowerCase();
-   console.log(wordOne, wordTwo)
    let result = "";
    for(let i=0; i<wordOne.length;i++){
     for(let j=0; j< wordTwo.length; j++){
@@ -231,6 +230,5 @@ thirdHidden.addEventListener("submit", (event)=>{
         }  
     }
    }
-
-   console.log(result)
+   resultThirdH.innerText = "lettere in comune: "+result;
 })
