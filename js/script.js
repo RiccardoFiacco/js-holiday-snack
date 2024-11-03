@@ -201,5 +201,11 @@ const secondHidden = document.getElementById("secondH-form");
 secondHidden.addEventListener("submit", (event)=>{
     event.preventDefault();
     const num = parseInt(document.getElementById("secondH-input").value)
-    const string = document.getElementById("secondH-text").value
+    let string = document.getElementById("secondH-text").value
+
+    if(!isEven(num)){
+        string = string.split('').reverse().join(''); 
+    }
+
+    resultSecondH.innerText = string;
 })
