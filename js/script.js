@@ -216,5 +216,21 @@ const thirdHidden = document.getElementById("thirdH-form");
 
 thirdHidden.addEventListener("submit", (event)=>{
     event.preventDefault()
-    
+
+   const wordOne = document.getElementById("thirdH-text-one").value.toLowerCase();
+   const wordTwo = document.getElementById("thirdH-text-two").value.toLowerCase();
+   console.log(wordOne, wordTwo)
+   let result = "";
+   for(let i=0; i<wordOne.length;i++){
+    for(let j=0; j< wordTwo.length; j++){
+        if(wordOne[i]==wordTwo[j]){
+            if(!result.includes(wordOne[i])){
+                result += wordOne[i];
+            }
+            
+        }  
+    }
+   }
+
+   console.log(result)
 })
