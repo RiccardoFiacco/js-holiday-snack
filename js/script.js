@@ -209,3 +209,12 @@ secondHidden.addEventListener("submit", (event)=>{
 
     resultSecondH.innerText = string;
 })
+
+//ninth snack
+
+const thirdHidden = document.getElementById("thirdH-form");
+
+thirdHidden.addEventListener("submit", (event)=>{
+    event.preventDefault()
+    
+})
