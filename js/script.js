@@ -35,20 +35,6 @@ function isDivisible(arr, divisor){
          return ("ce una stringa nell'array");
     }  
 }
-//secondSnack
-
-const secondForm = document.getElementById("second-snack-form");
-secondForm.addEventListener("submit", (event)=>{
-    event.preventDefault();
-    const word = document.getElementById("input-second-snack").value.toLowerCase();
-    const start = parseInt(document.getElementById("start-second-snack").value);
-    const end = parseInt(document.getElementById("end-second-snack").value);
-    const result = (word.split('').slice(start, end+1)).join('');
-    const displaySecond  = document.getElementById("result-second-snack");
-    displaySecond.innerText = result;
-})
-
-
 //third snack
 
 const thirdForm = document.getElementById("third-snack-form");
