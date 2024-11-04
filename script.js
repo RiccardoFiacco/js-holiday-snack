@@ -37,37 +37,6 @@ function isDivisible(arr, divisor){
     }  
 }
 export {isNum, isEven,isDivisible}
-
-// //sixth snack
-
-// const sixthForm = document.getElementById("sixth-snack-form");
-// let arrSixthSnack = [];
-
-// insertSixthSnack.addEventListener("click", (event)=>{
-//     event.preventDefault();
-//     const nameSurname = document.getElementById("name-sixth-snack").value;
-//     const age = parseInt(document.getElementById("age-sixth-snack").value);
-//     //potrebbero esserci vari controlli sull'input
-//     let obj = {
-//         nameSurname,
-//         age
-//     }
-//     arrSixthSnack.push(obj);
-//     console.log(arrSixthSnack)
-// })
-
-// sixthForm.addEventListener("submit", (event)=>{
-//     event.preventDefault();
-//     arrSixthSnack.sort((a, b) => a.age - b.age);
-//     let i= 0;
-//     arrSixthSnack.forEach((el)=>{ 
-  
-//         resultSixthSnack.innerText += `[${el.age} ${el.nameSurname}] `;
-//         i++;
-//     })
-//     arrSixthSnack = [];
-// })
-
 // //seventh snack
 
 // const hiddenFirstSnack = document.getElementById("sherlock-first-form");
