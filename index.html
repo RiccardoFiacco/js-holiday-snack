@@ -1,7 +1,7 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -9,11 +9,13 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <h1>Holiday Snack</h1>
-        <ul class="nav nav-underline">
+      <div class="row">
+        <div class="col mb-4">
+          <h1>Holiday Snack</h1>
+          <ul class="nav nav-underline">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
@@ -21,127 +23,235 @@
               <a class="nav-link" href="./first/index.html">Esercizio 1</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#">Esercizio 2</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Disabled</a>
+              <a class="nav-link" href="#">Esercizio 3</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="./tenth/index.html">Esercizio 10</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./eleventh/index.html">Esercizio 11</a>
-              </li>
-        </ul>
-
-
-
-
-
-
-
-
-        <div class="row">
-            <div class="col-12">
-                <form id="second-snack-form">
-                    <div class="mb-3">
-                      <label class="form-label"><strong>Esercizio 2:</strong> Data una stringa con un pattern ripetuto (es. ABCDE), ipoteticamente infinita, restituire le lettere racchiuse fra due indici (es. 13 e 16) inclusi.</label>
-                      <input type="text" class="form-control" id="input-second-snack">
-                      <input type="number" class="form-control" id="start-second-snack" placeholder=" inserisci numero di inizio sottostringa">
-                      <input type="number" class="form-control" id="end-second-snack" placeholder=" inserisci numero di fine sottostringa">
-                      <div id="result-second-snack" class="mt-3"></div>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Invia</button>
-                </form>
-            </div>
-            <div class="col-12">
-                <form id="third-snack-form">
-                    <div class="mb-3">
-                      <label class="form-label"><strong>Esercizio 3:</strong> Dato un array di numeri interi, restituire un array con solo i numeri pari</label>
-                      <input type="number" class="form-control" id="input-third-snack" placeholder=" inserisci numero ">
-                      <div id="resultThirdSnack" class="mt-3"></div>
-                    </div>
-                    <button type="submit" id="insertThirdSnack" class="btn btn-primary">Invia</button>
-                    <button type="submit" class="btn btn-primary">Prendi Pari</button>
-                </form>
-            </div>
-            <div class="col-12">
-                <form id="fourth-snack-form">
-                    <div class="mb-3">
-                      <label class="form-label"><strong>Esercizio 4:</strong> Dato un array di numeri interi, creare una funzione che sia in grado di restituire un nuovo array con solo i numeri pari o solo i numeri dispari (su richiesta dell'utente)</label>
-                      <input type="number" class="form-control" id="input-fourth-snack" placeholder=" inserisci numero ">
-                      <select  class="form-select" name="ageSel" id="selectEven" required>
-                        <option value="" disabled selected>Seleziona qualcosa</option>
-                        <option value="0">false</option>
-                        <option value="1">true</option>
-                    </select>
-                      <div id="resultFourthSnack" class="mt-3"></div>
-                    </div>
-                    <button type="submit" id="insertFourthSnack" class="btn btn-primary">Invia</button>
-                    <button type="submit" class="btn btn-primary">Ritorna Array</button>
-                </form>
-            </div>
-            <div class="col-12">
-                <form id="fifth-snack-form">
-                    <div class="mb-3">
-                      <label class="form-label"><strong>Esercizio 5:</strong> Dati un numero intero e un array di numeri interi, creare una funzione che sia in grado di restituire un nuovo array contenente solo i numeri divisibili per il numero intero specificato</label>
-                      <input type="number" class="form-control" id="input-fifth-snack" placeholder=" inserisci numero">
-                      <input type="number" class="form-control" id="divisor-fifth-snack" placeholder=" inserisci divisore">
-                      <div id="resultFifthSnack" class="mt-3"></div>
-                    </div>
-                    <button type="submit" id="insertFifthSnack" class="btn btn-primary">Invia</button>
-                    <button type="submit" class="btn btn-primary">Ritorna Array</button>
-                </form>
-            </div>
-            <div class="col-12">
-                <form id="sixth-snack-form">
-                    <div class="mb-3">
-                      <label class="form-label"><strong>Esercizio 6:</strong> Dato un array di oggetti, ordinare l'array in base al valore di una proprietà degli oggetti (es. name: “Marco”, age: 22)</label>
-                      <input type="text" class="form-control" id="name-sixth-snack" placeholder=" inserisci nome " required>
-                      <input type="number" class="form-control" id="age-sixth-snack" placeholder=" inserisci eta" required>
-                      <div id="resultSixthSnack" class="mt-3"></div>
-                    </div>
-                    <button type="submit" id="insertSixthSnack" class="btn btn-primary">Aggiungi personsa</button>
-                    <button type="submit" class="btn btn-primary">Ordina</button>
-                </form>
-            </div>
-            <div class="col-12">
-                <form id="sherlock-first-form">
-                    <div class="mb-3">
-                      <label class="form-label"><strong>Esercizio 1 nascosto:</strong> Dato un array di numeri interi, sommare e dividere per due</label>
-                      <input type="number" class="form-control" id="input-sherlock-first-snack" placeholder=" inserisci numero ">
-                      <div id="resultSherlockFirstSnack" class="mt-3"></div>
-                    </div>
-                    <button type="submit" id="insertSherlockFirstSnack" class="btn btn-primary">Invia</button>
-                    <button type="submit" class="btn btn-primary">Risultato</button>
-                </form>
-            </div>
-            <div class="col-12">
-                <form id="secondH-form">
-                    <div class="mb-3">
-                      <label class="form-label"><strong>Esercizio 2 nascosto:</strong> Dato una parola, se il numero è pari lascia il testo cosi altrimenti scrivi al contrario</label>
-                      <input type="number" class="form-control" id="secondH-input" placeholder=" inserisci numero ">
-                      <input type="text" class="form-control" id="secondH-text" placeholder=" inserisci stringa">
-                      <div id="resultSecondH" class="mt-3"></div>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Risultato</button>
-                </form>
-            </div>
-            <div class="col-12">
-                <form id="thirdH-form">
-                    <div class="mb-3">
-                      <label class="form-label"><strong>Esercizio 3 nascosto:</strong> Date due parole, restituire le lettere in comune</label>
-                      <input type="text" class="form-control" id="thirdH-text-one" placeholder=" inserisci stringa ">
-                      <input type="text" class="form-control" id="thirdH-text-two" placeholder=" inserisci stringa">
-                      <div id="resultThirdH" class="mt-3"></div>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Risultato</button>
-                </form>
-            </div>
-            <a href="./tenth/index.html">Esercizio 10</a>
-            <a href="./eleventh/index.html">Esercizio 11</a>
+              <a class="nav-link" href="#">Esercizio 4</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Esercizio 5</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Esercizio 6</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Esercizio 7</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Esercizio 8</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Esercizio 9</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./tenth/index.html">Esercizio 10</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./eleventh/index.html">Esercizio 11</a>
+            </li>
+          </ul>
         </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <form id="third-snack-form">
+            <div class="mb-3">
+              <label class="form-label"
+                ><strong>Esercizio 3:</strong> Dato un array di numeri interi,
+                restituire un array con solo i numeri pari</label
+              >
+              <input
+                type="number"
+                class="form-control"
+                id="input-third-snack"
+                placeholder=" inserisci numero "
+              />
+              <div id="resultThirdSnack" class="mt-3"></div>
+            </div>
+            <button type="submit" id="insertThirdSnack" class="btn btn-primary">
+              Invia
+            </button>
+            <button type="submit" class="btn btn-primary">Prendi Pari</button>
+          </form>
+        </div>
+        <div class="col-12">
+          <form id="fourth-snack-form">
+            <div class="mb-3">
+              <label class="form-label"
+                ><strong>Esercizio 4:</strong> Dato un array di numeri interi,
+                creare una funzione che sia in grado di restituire un nuovo
+                array con solo i numeri pari o solo i numeri dispari (su
+                richiesta dell'utente)</label
+              >
+              <input
+                type="number"
+                class="form-control"
+                id="input-fourth-snack"
+                placeholder=" inserisci numero "
+              />
+              <select
+                class="form-select"
+                name="ageSel"
+                id="selectEven"
+                required
+              >
+                <option value="" disabled selected>Seleziona qualcosa</option>
+                <option value="0">false</option>
+                <option value="1">true</option>
+              </select>
+              <div id="resultFourthSnack" class="mt-3"></div>
+            </div>
+            <button
+              type="submit"
+              id="insertFourthSnack"
+              class="btn btn-primary"
+            >
+              Invia
+            </button>
+            <button type="submit" class="btn btn-primary">Ritorna Array</button>
+          </form>
+        </div>
+        <div class="col-12">
+          <form id="fifth-snack-form">
+            <div class="mb-3">
+              <label class="form-label"
+                ><strong>Esercizio 5:</strong> Dati un numero intero e un array
+                di numeri interi, creare una funzione che sia in grado di
+                restituire un nuovo array contenente solo i numeri divisibili
+                per il numero intero specificato</label
+              >
+              <input
+                type="number"
+                class="form-control"
+                id="input-fifth-snack"
+                placeholder=" inserisci numero"
+              />
+              <input
+                type="number"
+                class="form-control"
+                id="divisor-fifth-snack"
+                placeholder=" inserisci divisore"
+              />
+              <div id="resultFifthSnack" class="mt-3"></div>
+            </div>
+            <button type="submit" id="insertFifthSnack" class="btn btn-primary">
+              Invia
+            </button>
+            <button type="submit" class="btn btn-primary">Ritorna Array</button>
+          </form>
+        </div>
+        <div class="col-12">
+          <form id="sixth-snack-form">
+            <div class="mb-3">
+              <label class="form-label"
+                ><strong>Esercizio 6:</strong> Dato un array di oggetti,
+                ordinare l'array in base al valore di una proprietà degli
+                oggetti (es. name: “Marco”, age: 22)</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="name-sixth-snack"
+                placeholder=" inserisci nome "
+                required
+              />
+              <input
+                type="number"
+                class="form-control"
+                id="age-sixth-snack"
+                placeholder=" inserisci eta"
+                required
+              />
+              <div id="resultSixthSnack" class="mt-3"></div>
+            </div>
+            <button type="submit" id="insertSixthSnack" class="btn btn-primary">
+              Aggiungi personsa
+            </button>
+            <button type="submit" class="btn btn-primary">Ordina</button>
+          </form>
+        </div>
+        <div class="col-12">
+          <form id="sherlock-first-form">
+            <div class="mb-3">
+              <label class="form-label"
+                ><strong>Esercizio 1 nascosto:</strong> Dato un array di numeri
+                interi, sommare e dividere per due</label
+              >
+              <input
+                type="number"
+                class="form-control"
+                id="input-sherlock-first-snack"
+                placeholder=" inserisci numero "
+              />
+              <div id="resultSherlockFirstSnack" class="mt-3"></div>
+            </div>
+            <button
+              type="submit"
+              id="insertSherlockFirstSnack"
+              class="btn btn-primary"
+            >
+              Invia
+            </button>
+            <button type="submit" class="btn btn-primary">Risultato</button>
+          </form>
+        </div>
+        <div class="col-12">
+          <form id="secondH-form">
+            <div class="mb-3">
+              <label class="form-label"
+                ><strong>Esercizio 2 nascosto:</strong> Dato una parola, se il
+                numero è pari lascia il testo cosi altrimenti scrivi al
+                contrario</label
+              >
+              <input
+                type="number"
+                class="form-control"
+                id="secondH-input"
+                placeholder=" inserisci numero "
+              />
+              <input
+                type="text"
+                class="form-control"
+                id="secondH-text"
+                placeholder=" inserisci stringa"
+              />
+              <div id="resultSecondH" class="mt-3"></div>
+            </div>
+            <button type="submit" class="btn btn-primary">Risultato</button>
+          </form>
+        </div>
+        <div class="col-12">
+          <form id="thirdH-form">
+            <div class="mb-3">
+              <label class="form-label"
+                ><strong>Esercizio 3 nascosto:</strong> Date due parole,
+                restituire le lettere in comune</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="thirdH-text-one"
+                placeholder=" inserisci stringa "
+              />
+              <input
+                type="text"
+                class="form-control"
+                id="thirdH-text-two"
+                placeholder=" inserisci stringa"
+              />
+              <div id="resultThirdH" class="mt-3"></div>
+            </div>
+            <button type="submit" class="btn btn-primary">Risultato</button>
+          </form>
+        </div>
+        <a href="./tenth/index.html">Esercizio 10</a>
+        <a href="./eleventh/index.html">Esercizio 11</a>
+      </div>
     </div>
     <script src="./js/script.js"></script>
-</body>
+  </body>
 </html>
