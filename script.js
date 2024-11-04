@@ -38,22 +38,6 @@ function isDivisible(arr, divisor){
 }
 export {isNum, isEven,isDivisible}
 
-// //eighth snack
-
-// const secondHidden = document.getElementById("secondH-form");
-
-// secondHidden.addEventListener("submit", (event)=>{
-//     event.preventDefault();
-//     const num = parseInt(document.getElementById("secondH-input").value)
-//     let string = document.getElementById("secondH-text").value
-
-//     if(!isEven(num)){
-//         string = string.split('').reverse().join(''); 
-//     }
-
-//     resultSecondH.innerText = string;
-// })
-
 // //ninth snack
 
 // const thirdHidden = document.getElementById("thirdH-form");
