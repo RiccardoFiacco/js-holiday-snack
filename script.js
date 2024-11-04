@@ -38,28 +38,6 @@ function isDivisible(arr, divisor){
 }
 export {isNum, isEven,isDivisible}
 
-// //fifth snack
-
-// const fifthForm = document.getElementById("fifth-snack-form");
-// let arrFifthSnack = [];
-
-// insertFifthSnack.addEventListener("click", (event)=>{
-//     event.preventDefault();
-//     const num = parseInt(document.getElementById("input-fifth-snack").value);
-//     arrFifthSnack.push(num); 
-//     document.getElementById("input-fifth-snack").value = "";
-// })
-
-// fifthForm.addEventListener("submit", (event)=>{
-    
-//     event.preventDefault();
-//     const divisor = parseInt(document.getElementById("divisor-fifth-snack").value);   
-//     const result = isDivisible(arrFifthSnack, divisor);
-//     resultFifthSnack.innerText = result;
-//     arrFifthSnack = [];
-    
-// })
-
 // //sixth snack
 
 // const sixthForm = document.getElementById("sixth-snack-form");
